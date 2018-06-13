@@ -1,0 +1,11 @@
+<h1>Register</h1>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="registerData.email" placeholder="Email" type="text" name="email">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="registerData.password" placeholder="Password" type="password" name="password">
+  </mat-form-field>
+  <button mat-raised-button (click)="postNewUser()">Register</button>
+</form>
